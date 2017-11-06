@@ -14,6 +14,18 @@
 		E48067FD1FB1159A004249E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48067FB1FB1159A004249E2 /* LaunchScreen.storyboard */; };
 		E48068081FB1159B004249E2 /* MiniCursoFinalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068071FB1159B004249E2 /* MiniCursoFinalProjectTests.swift */; };
 		E48068131FB1159B004249E2 /* MiniCursoFinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068121FB1159B004249E2 /* MiniCursoFinalProjectUITests.swift */; };
+		E48068351FB11602004249E2 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48068211FB11602004249E2 /* Home.storyboard */; };
+		E48068361FB11602004249E2 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48068221FB11602004249E2 /* Profile.storyboard */; };
+		E48068371FB11602004249E2 /* AnimalsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068241FB11602004249E2 /* AnimalsFactory.swift */; };
+		E48068381FB11602004249E2 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068251FB11602004249E2 /* ColorUtils.swift */; };
+		E48068391FB11602004249E2 /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068271FB11602004249E2 /* UITextField+Padding.swift */; };
+		E480683A1FB11602004249E2 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068291FB11602004249E2 /* HomeTableViewCell.swift */; };
+		E480683B1FB11602004249E2 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E480682A1FB11602004249E2 /* HomeTableViewCell.xib */; };
+		E480683C1FB11602004249E2 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E480682C1FB11602004249E2 /* Animal.swift */; };
+		E480683D1FB11602004249E2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E480682F1FB11602004249E2 /* DetailViewController.swift */; };
+		E480683E1FB11602004249E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068301FB11602004249E2 /* HomeViewController.swift */; };
+		E480683F1FB11602004249E2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068321FB11602004249E2 /* ProfileViewController.swift */; };
+		E48068401FB11602004249E2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068341FB11602004249E2 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +59,18 @@
 		E480680E1FB1159B004249E2 /* MiniCursoFinalProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniCursoFinalProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48068121FB1159B004249E2 /* MiniCursoFinalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCursoFinalProjectUITests.swift; sourceTree = "<group>"; };
 		E48068141FB1159B004249E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E48068211FB11602004249E2 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E48068221FB11602004249E2 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		E48068241FB11602004249E2 /* AnimalsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalsFactory.swift; sourceTree = "<group>"; };
+		E48068251FB11602004249E2 /* ColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		E48068271FB11602004249E2 /* UITextField+Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
+		E48068291FB11602004249E2 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		E480682A1FB11602004249E2 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		E480682C1FB11602004249E2 /* Animal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		E480682F1FB11602004249E2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E48068301FB11602004249E2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E48068321FB11602004249E2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E48068341FB11602004249E2 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +121,13 @@
 		E48067F11FB1159A004249E2 /* MiniCursoFinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				E48068201FB11602004249E2 /* Storyboards */,
+				E48068231FB11602004249E2 /* Utils */,
+				E48068261FB11602004249E2 /* Extensions */,
+				E48068281FB11602004249E2 /* TableCells */,
+				E480682B1FB11602004249E2 /* Models */,
+				E480682D1FB11602004249E2 /* ViewControllers */,
+				E48068331FB11602004249E2 /* TabBarControllers */,
 				E48067F21FB1159A004249E2 /* AppDelegate.swift */,
 				E48067F41FB1159A004249E2 /* ViewController.swift */,
 				E48067F61FB1159A004249E2 /* Main.storyboard */,
@@ -123,6 +154,83 @@
 				E48068141FB1159B004249E2 /* Info.plist */,
 			);
 			path = MiniCursoFinalProjectUITests;
+			sourceTree = "<group>";
+		};
+		E48068201FB11602004249E2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E48068211FB11602004249E2 /* Home.storyboard */,
+				E48068221FB11602004249E2 /* Profile.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E48068231FB11602004249E2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E48068241FB11602004249E2 /* AnimalsFactory.swift */,
+				E48068251FB11602004249E2 /* ColorUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E48068261FB11602004249E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E48068271FB11602004249E2 /* UITextField+Padding.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E48068281FB11602004249E2 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				E48068291FB11602004249E2 /* HomeTableViewCell.swift */,
+				E480682A1FB11602004249E2 /* HomeTableViewCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		E480682B1FB11602004249E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E480682C1FB11602004249E2 /* Animal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E480682D1FB11602004249E2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E480682E1FB11602004249E2 /* Home */,
+				E48068311FB11602004249E2 /* Profile */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E480682E1FB11602004249E2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E480682F1FB11602004249E2 /* DetailViewController.swift */,
+				E48068301FB11602004249E2 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E48068311FB11602004249E2 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E48068321FB11602004249E2 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E48068331FB11602004249E2 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E48068341FB11602004249E2 /* TabBarController.swift */,
+			);
+			path = TabBarControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,7 +345,10 @@
 			files = (
 				E48067FD1FB1159A004249E2 /* LaunchScreen.storyboard in Resources */,
 				E48067FA1FB1159A004249E2 /* Assets.xcassets in Resources */,
+				E48068361FB11602004249E2 /* Profile.storyboard in Resources */,
 				E48067F81FB1159A004249E2 /* Main.storyboard in Resources */,
+				E480683B1FB11602004249E2 /* HomeTableViewCell.xib in Resources */,
+				E48068351FB11602004249E2 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +373,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E480683A1FB11602004249E2 /* HomeTableViewCell.swift in Sources */,
 				E48067F51FB1159A004249E2 /* ViewController.swift in Sources */,
+				E48068401FB11602004249E2 /* TabBarController.swift in Sources */,
+				E480683F1FB11602004249E2 /* ProfileViewController.swift in Sources */,
 				E48067F31FB1159A004249E2 /* AppDelegate.swift in Sources */,
+				E48068371FB11602004249E2 /* AnimalsFactory.swift in Sources */,
+				E480683C1FB11602004249E2 /* Animal.swift in Sources */,
+				E480683E1FB11602004249E2 /* HomeViewController.swift in Sources */,
+				E48068391FB11602004249E2 /* UITextField+Padding.swift in Sources */,
+				E48068381FB11602004249E2 /* ColorUtils.swift in Sources */,
+				E480683D1FB11602004249E2 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
