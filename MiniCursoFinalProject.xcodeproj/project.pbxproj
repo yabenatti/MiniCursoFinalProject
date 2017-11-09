@@ -26,6 +26,8 @@
 		E480683E1FB11602004249E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068301FB11602004249E2 /* HomeViewController.swift */; };
 		E480683F1FB11602004249E2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068321FB11602004249E2 /* ProfileViewController.swift */; };
 		E48068401FB11602004249E2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068341FB11602004249E2 /* TabBarController.swift */; };
+		E4D553CB1FB48CA100FD9AC3 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D553CA1FB48CA100FD9AC3 /* CustomView.swift */; };
+		E4D553CD1FB48CA900FD9AC3 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4D553CC1FB48CA900FD9AC3 /* CustomView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		E48068301FB11602004249E2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E48068321FB11602004249E2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E48068341FB11602004249E2 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E4D553CA1FB48CA100FD9AC3 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		E4D553CC1FB48CA900FD9AC3 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,19 +125,20 @@
 		E48067F11FB1159A004249E2 /* MiniCursoFinalProject */ = {
 			isa = PBXGroup;
 			children = (
-				E48068201FB11602004249E2 /* Storyboards */,
-				E48068231FB11602004249E2 /* Utils */,
-				E48068261FB11602004249E2 /* Extensions */,
-				E48068281FB11602004249E2 /* TableCells */,
-				E480682B1FB11602004249E2 /* Models */,
-				E480682D1FB11602004249E2 /* ViewControllers */,
-				E48068331FB11602004249E2 /* TabBarControllers */,
 				E48067F21FB1159A004249E2 /* AppDelegate.swift */,
-				E48067F41FB1159A004249E2 /* ViewController.swift */,
-				E48067F61FB1159A004249E2 /* Main.storyboard */,
 				E48067F91FB1159A004249E2 /* Assets.xcassets */,
-				E48067FB1FB1159A004249E2 /* LaunchScreen.storyboard */,
+				E4D553C91FB48C8900FD9AC3 /* CustomViews */,
+				E48068261FB11602004249E2 /* Extensions */,
 				E48067FE1FB1159B004249E2 /* Info.plist */,
+				E48067FB1FB1159A004249E2 /* LaunchScreen.storyboard */,
+				E48067F61FB1159A004249E2 /* Main.storyboard */,
+				E480682B1FB11602004249E2 /* Models */,
+				E48068201FB11602004249E2 /* Storyboards */,
+				E48068331FB11602004249E2 /* TabBarControllers */,
+				E48068281FB11602004249E2 /* TableCells */,
+				E48068231FB11602004249E2 /* Utils */,
+				E48067F41FB1159A004249E2 /* ViewController.swift */,
+				E480682D1FB11602004249E2 /* ViewControllers */,
 			);
 			path = MiniCursoFinalProject;
 			sourceTree = "<group>";
@@ -231,6 +236,15 @@
 				E48068341FB11602004249E2 /* TabBarController.swift */,
 			);
 			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		E4D553C91FB48C8900FD9AC3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				E4D553CA1FB48CA100FD9AC3 /* CustomView.swift */,
+				E4D553CC1FB48CA900FD9AC3 /* CustomView.xib */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +363,7 @@
 				E48067F81FB1159A004249E2 /* Main.storyboard in Resources */,
 				E480683B1FB11602004249E2 /* HomeTableViewCell.xib in Resources */,
 				E48068351FB11602004249E2 /* Home.storyboard in Resources */,
+				E4D553CD1FB48CA900FD9AC3 /* CustomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +397,7 @@
 				E480683C1FB11602004249E2 /* Animal.swift in Sources */,
 				E480683E1FB11602004249E2 /* HomeViewController.swift in Sources */,
 				E48068391FB11602004249E2 /* UITextField+Padding.swift in Sources */,
+				E4D553CB1FB48CA100FD9AC3 /* CustomView.swift in Sources */,
 				E48068381FB11602004249E2 /* ColorUtils.swift in Sources */,
 				E480683D1FB11602004249E2 /* DetailViewController.swift in Sources */,
 			);
@@ -634,6 +650,7 @@
 				E48068191FB1159B004249E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E480681A1FB1159B004249E2 /* Build configuration list for PBXNativeTarget "MiniCursoFinalProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -642,6 +659,7 @@
 				E480681C1FB1159B004249E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E480681D1FB1159B004249E2 /* Build configuration list for PBXNativeTarget "MiniCursoFinalProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -650,6 +668,7 @@
 				E480681F1FB1159B004249E2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

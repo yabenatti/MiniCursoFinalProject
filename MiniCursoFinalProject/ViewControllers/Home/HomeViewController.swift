@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     //MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var segmentedControl: UISegmentedControl!
+    @IBOutlet weak var customView: CustomView!
     
     //MARK: - Variables
     var animalsArray: [Animal] = []
@@ -38,6 +39,9 @@ class HomeViewController: UIViewController {
         
         //Animals Factory
         self.animalsArray = AnimalsFactory.createAnimals()
+        
+        //Custom View
+        self.customView.isHidden = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -73,8 +77,10 @@ class HomeViewController: UIViewController {
     @IBAction func didChangeSegmentedControl(_ sender: Any) {
         if (self.segmentedControl.selectedSegmentIndex == 0) {
             self.tableView.isHidden = false
+            self.customView.isHidden = true
         } else {
             self.tableView.isHidden = true
+            self.customView.isHidden = false
         }
     }
 }

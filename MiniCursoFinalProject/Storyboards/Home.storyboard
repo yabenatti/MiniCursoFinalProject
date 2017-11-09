@@ -38,20 +38,29 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoS-hv-cBH" customClass="CustomView" customModule="MiniCursoFinalProject" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="462"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.96470588235294119" green="0.97254901960784312" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Fuw-C1-Ubd" secondAttribute="bottom" id="6EO-5W-rHj"/>
                             <constraint firstItem="Fuw-C1-Ubd" firstAttribute="top" secondItem="DXv-Uj-mdl" secondAttribute="bottom" constant="32" id="Gaz-Jf-ber"/>
+                            <constraint firstItem="LoS-hv-cBH" firstAttribute="leading" secondItem="B1X-Ce-Ob8" secondAttribute="leading" id="Itx-O8-Ki5"/>
+                            <constraint firstItem="zO8-ym-cI6" firstAttribute="top" secondItem="LoS-hv-cBH" secondAttribute="bottom" id="Um3-0Z-PPX"/>
                             <constraint firstItem="DXv-Uj-mdl" firstAttribute="top" secondItem="Vib-f1-lzn" secondAttribute="bottom" constant="32" id="Zc7-59-Ek3"/>
                             <constraint firstItem="Fuw-C1-Ubd" firstAttribute="leading" secondItem="B1X-Ce-Ob8" secondAttribute="leading" id="anc-Xu-n83"/>
                             <constraint firstAttribute="trailing" secondItem="DXv-Uj-mdl" secondAttribute="trailing" constant="16" id="cmV-82-4fW"/>
                             <constraint firstItem="DXv-Uj-mdl" firstAttribute="leading" secondItem="B1X-Ce-Ob8" secondAttribute="leading" constant="16" id="hna-iu-WE8"/>
+                            <constraint firstAttribute="trailing" secondItem="LoS-hv-cBH" secondAttribute="trailing" id="v4E-4X-4oN"/>
                             <constraint firstAttribute="trailing" secondItem="Fuw-C1-Ubd" secondAttribute="trailing" id="yJZ-7M-bm9"/>
+                            <constraint firstItem="LoS-hv-cBH" firstAttribute="top" secondItem="DXv-Uj-mdl" secondAttribute="bottom" constant="32" id="yTF-dB-Ah7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vdm-ye-nAq"/>
                     <connections>
+                        <outlet property="customView" destination="LoS-hv-cBH" id="U8s-de-1fc"/>
                         <outlet property="segmentedControl" destination="DXv-Uj-mdl" id="8Fi-3A-46N"/>
                         <outlet property="tableView" destination="Fuw-C1-Ubd" id="4je-qN-e4M"/>
                         <segue destination="xaV-uo-tK4" kind="show" identifier="HomeToDetailSegue" id="Ck1-6V-YKn"/>
