@@ -28,7 +28,7 @@
                                     <segment title="Table"/>
                                     <segment title="CustomView"/>
                                 </segments>
-                                <color key="tintColor" red="0.97254901959999995" green="0.59999999999999998" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.49019607840000001" green="0.47843137250000001" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="didChangeSegmentedControl:" destination="jIA-5O-ai3" eventType="valueChanged" id="Y2M-6k-cCd"/>
                                 </connections>
