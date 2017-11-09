@@ -30,3 +30,9 @@ You'll need the terminal to access the git repo and XCode 8.3 or later
 ## Authors
 
 * **Yasmin Benatti** - [GitHub Profile](https://github.com/yabenatti)
+
+## Support Material 
+
+* [SpeakerDeckPresentation](https://speakerdeck.com/yabenatti/mini-curso-ios-ifsp-sao-carlos) - Access it here
+
+
