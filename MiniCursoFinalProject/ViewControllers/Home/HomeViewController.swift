@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
 
     //MARK: - IBOutlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     
     //MARK: - Variables
     var animalsArray: [Animal] = []
@@ -66,7 +67,16 @@ class HomeViewController: UIViewController {
             }
         }
     }
+    
+    // MARK: - Segmented Control
 
+    @IBAction func didChangeSegmentedControl(_ sender: Any) {
+        if (self.segmentedControl.selectedSegmentIndex == 0) {
+            self.tableView.isHidden = false
+        } else {
+            self.tableView.isHidden = true
+        }
+    }
 }
 
 extension HomeViewController : UITableViewDelegate {

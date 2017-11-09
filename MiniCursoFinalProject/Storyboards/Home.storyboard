@@ -13,7 +13,7 @@
         <!--Home View Controller-->
         <scene sceneID="9Rl-Ae-EYn">
             <objects>
-                <viewController id="jIA-5O-ai3" customClass="HomeViewController" customModule="MiniCursoParte1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jIA-5O-ai3" customClass="HomeViewController" customModule="MiniCursoFinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vib-f1-lzn"/>
                         <viewControllerLayoutGuide type="bottom" id="zO8-ym-cI6"/>
@@ -22,8 +22,19 @@
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="DXv-Uj-mdl">
+                                <rect key="frame" x="16" y="32" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Table"/>
+                                    <segment title="CustomView"/>
+                                </segments>
+                                <color key="tintColor" red="0.97254901959999995" green="0.59999999999999998" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="didChangeSegmentedControl:" destination="jIA-5O-ai3" eventType="valueChanged" id="Y2M-6k-cCd"/>
+                                </connections>
+                            </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fuw-C1-Ubd">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="462"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -31,13 +42,17 @@
                         <color key="backgroundColor" red="0.96470588235294119" green="0.97254901960784312" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Fuw-C1-Ubd" secondAttribute="bottom" id="6EO-5W-rHj"/>
+                            <constraint firstItem="Fuw-C1-Ubd" firstAttribute="top" secondItem="DXv-Uj-mdl" secondAttribute="bottom" constant="32" id="Gaz-Jf-ber"/>
+                            <constraint firstItem="DXv-Uj-mdl" firstAttribute="top" secondItem="Vib-f1-lzn" secondAttribute="bottom" constant="32" id="Zc7-59-Ek3"/>
                             <constraint firstItem="Fuw-C1-Ubd" firstAttribute="leading" secondItem="B1X-Ce-Ob8" secondAttribute="leading" id="anc-Xu-n83"/>
-                            <constraint firstItem="Fuw-C1-Ubd" firstAttribute="top" secondItem="Vib-f1-lzn" secondAttribute="bottom" id="iHW-JT-Fyn"/>
+                            <constraint firstAttribute="trailing" secondItem="DXv-Uj-mdl" secondAttribute="trailing" constant="16" id="cmV-82-4fW"/>
+                            <constraint firstItem="DXv-Uj-mdl" firstAttribute="leading" secondItem="B1X-Ce-Ob8" secondAttribute="leading" constant="16" id="hna-iu-WE8"/>
                             <constraint firstAttribute="trailing" secondItem="Fuw-C1-Ubd" secondAttribute="trailing" id="yJZ-7M-bm9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Vdm-ye-nAq"/>
                     <connections>
+                        <outlet property="segmentedControl" destination="DXv-Uj-mdl" id="8Fi-3A-46N"/>
                         <outlet property="tableView" destination="Fuw-C1-Ubd" id="4je-qN-e4M"/>
                         <segue destination="xaV-uo-tK4" kind="show" identifier="HomeToDetailSegue" id="Ck1-6V-YKn"/>
                     </connections>
@@ -49,7 +64,7 @@
         <!--Detail View Controller-->
         <scene sceneID="YnH-L8-ufz">
             <objects>
-                <viewController storyboardIdentifier="DetailViewControllerID" id="xaV-uo-tK4" customClass="DetailViewController" customModule="MiniCursoParte1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewControllerID" id="xaV-uo-tK4" customClass="DetailViewController" customModule="MiniCursoFinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0GA-z7-iMy"/>
                         <viewControllerLayoutGuide type="bottom" id="01o-rY-FF9"/>
