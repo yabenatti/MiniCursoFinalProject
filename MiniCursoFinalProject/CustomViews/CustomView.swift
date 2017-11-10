@@ -15,8 +15,11 @@ class CustomView: UIView {
     // MARK: - IBOutlets
     @IBOutlet weak var centerImageView: UIImageView!
     
-    // MARK: - Init Methods
+    // MARK: - Constraints
+    @IBOutlet weak var centerImageViewCenterYConstraint: NSLayoutConstraint!
+    @IBOutlet weak var centerImageViewWidthConstraint: NSLayoutConstraint!
     
+    // MARK: - Init Methods
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.commomSetup()
@@ -41,6 +44,25 @@ class CustomView: UIView {
         view.frame = self.bounds
         
         addSubview(view)
+    }
+    
+    //MARK: - Functions
+    func moveImageToInitialPosition() {
+        
+        self.centerImageViewCenterYConstraint.constant = (self.frame.size.height/2) + (self.centerImageViewWidthConstraint.constant/2) //aspect ratio 1:1 so I can use the width
+
+    }
+    
+    func animateImage() {
+        
+        self.centerImageViewCenterYConstraint.constant = 0
+        
+        UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 5.0, options: .curveLinear, animations: {
+            
+            self.layoutIfNeeded()
+            self.updateConstraints()
+            
+        }, completion: nil)
     }
 
 }

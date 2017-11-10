@@ -42,6 +42,7 @@ class HomeViewController: UIViewController {
         
         //Custom View
         self.customView.isHidden = true
+        self.customView.moveImageToInitialPosition()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,13 +51,31 @@ class HomeViewController: UIViewController {
         //Tab Bar
         self.tabBarController?.tabBar.isHidden = false
 
-        
-        self.tableView.reloadData()
+        if (self.segmentedControl.selectedSegmentIndex == 0) {
+            self.tableView.reloadData()
+        }
+
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if (self.segmentedControl.selectedSegmentIndex == 1) {
+            self.animateImage()
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.customView.moveImageToInitialPosition()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - Animation 
+    
+    func animateImage() {
+        self.customView.animateImage()
     }
     
     // MARK: - Navigation
@@ -78,9 +97,12 @@ class HomeViewController: UIViewController {
         if (self.segmentedControl.selectedSegmentIndex == 0) {
             self.tableView.isHidden = false
             self.customView.isHidden = true
+            self.customView.moveImageToInitialPosition()
+            self.tableView.reloadData()
         } else {
             self.tableView.isHidden = true
             self.customView.isHidden = false
+            self.animateImage()
         }
     }
 }
@@ -90,6 +112,7 @@ extension HomeViewController : UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let animal = self.animalsArray[indexPath.row]
+        print("Selected the row: \(indexPath.row) with animal: \(animal)")
 //        self.performSegue(withIdentifier: "HomeToDetailSegue", sender: animal)
         
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
