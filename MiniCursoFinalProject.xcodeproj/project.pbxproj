@@ -26,6 +26,7 @@
 		E480683E1FB11602004249E2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068301FB11602004249E2 /* HomeViewController.swift */; };
 		E480683F1FB11602004249E2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068321FB11602004249E2 /* ProfileViewController.swift */; };
 		E48068401FB11602004249E2 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48068341FB11602004249E2 /* TabBarController.swift */; };
+		E482CAE51FDDCD6E00D85AA5 /* MiniCursoFinalProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E482CAE21FDDCC4B00D85AA5 /* MiniCursoFinalProject.xcdatamodeld */; };
 		E4D553CB1FB48CA100FD9AC3 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4D553CA1FB48CA100FD9AC3 /* CustomView.swift */; };
 		E4D553CD1FB48CA900FD9AC3 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4D553CC1FB48CA900FD9AC3 /* CustomView.xib */; };
 /* End PBXBuildFile section */
@@ -73,6 +74,7 @@
 		E48068301FB11602004249E2 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E48068321FB11602004249E2 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E48068341FB11602004249E2 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		E482CAE31FDDCC4B00D85AA5 /* MiniCursoFinalProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MiniCursoFinalProject.xcdatamodel; sourceTree = "<group>"; };
 		E4D553CA1FB48CA100FD9AC3 /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		E4D553CC1FB48CA900FD9AC3 /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +141,7 @@
 				E48068231FB11602004249E2 /* Utils */,
 				E48067F41FB1159A004249E2 /* ViewController.swift */,
 				E480682D1FB11602004249E2 /* ViewControllers */,
+				E482CAE21FDDCC4B00D85AA5 /* MiniCursoFinalProject.xcdatamodeld */,
 			);
 			path = MiniCursoFinalProject;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				E480683E1FB11602004249E2 /* HomeViewController.swift in Sources */,
 				E48068391FB11602004249E2 /* UITextField+Padding.swift in Sources */,
 				E4D553CB1FB48CA100FD9AC3 /* CustomView.swift in Sources */,
+				E482CAE51FDDCD6E00D85AA5 /* MiniCursoFinalProject.xcdatamodeld in Sources */,
 				E48068381FB11602004249E2 /* ColorUtils.swift in Sources */,
 				E480683D1FB11602004249E2 /* DetailViewController.swift in Sources */,
 			);
@@ -671,6 +675,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E482CAE21FDDCC4B00D85AA5 /* MiniCursoFinalProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E482CAE31FDDCC4B00D85AA5 /* MiniCursoFinalProject.xcdatamodel */,
+			);
+			currentVersion = E482CAE31FDDCC4B00D85AA5 /* MiniCursoFinalProject.xcdatamodel */;
+			path = MiniCursoFinalProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E48067E71FB1159A004249E2 /* Project object */;
 }
