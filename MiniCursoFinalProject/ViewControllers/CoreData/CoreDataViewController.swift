@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class CoreDataViewController: UIViewController {
     
@@ -14,7 +15,7 @@ class CoreDataViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     // MARK: - Variables
-    var items: [String] = []
+    var animalsCoreData: [NSManagedObject] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +45,32 @@ class CoreDataViewController: UIViewController {
     */
     
     func addItemToList(_ sender: UIBarButtonItem) {
-        print("add item")
+        let alert  = UIAlertController(title: "New Animal", message: "Add a new animal", preferredStyle: .alert)
+        
+        let saveAction = UIAlertAction(title: "Save", style: .default) {
+            [unowned self] action in
+            
+            guard let textField = alert.textFields?.first,
+                let animalToSave = textField.text else {
+                    return
+            }
+            
+            self.save(animal: animalToSave)
+            self.tableView.reloadData()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default)
+        
+        alert.addTextField()
+        
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        
+        present(alert, animated: true)
+    }
+    
+    func save(animal: String) {
+        
     }
 }
 
@@ -52,13 +78,15 @@ class CoreDataViewController: UIViewController {
 
 extension CoreDataViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return animalsCoreData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let animalCoreData = self.animalsCoreData[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        cell.textLabel?.text = self.items[indexPath.row]
+        
+        cell.textLabel?.text = animalCoreData.value(forKeyPath: "name") as? String
         
         return cell
     }
