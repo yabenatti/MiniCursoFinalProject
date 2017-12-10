@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zJV-6x-05P">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="17B1003" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="zJV-6x-05P">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,6 +21,7 @@
                     <connections>
                         <segue destination="JPB-yi-FqP" kind="relationship" relationship="viewControllers" id="keU-wh-3JV"/>
                         <segue destination="Ig3-YM-R4g" kind="relationship" relationship="viewControllers" id="eug-ny-PHK"/>
+                        <segue destination="ALs-bm-mGn" kind="relationship" relationship="viewControllers" id="hLq-rx-zIL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZP-Ju-1z5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -35,7 +36,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6L-fU-GxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1018" y="390"/>
+            <point key="canvasLocation" x="-1219" y="390"/>
         </scene>
         <!--Profile-->
         <scene sceneID="dzX-DP-2Tu">
@@ -45,11 +46,22 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVh-il-6Iz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-651" y="390"/>
+            <point key="canvasLocation" x="-832" y="390"/>
+        </scene>
+        <!--CoreData-->
+        <scene sceneID="gz4-VB-Knn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CoreData" id="ALs-bm-mGn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="CoreData" image="storage" id="aOf-KI-Gor"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQw-lY-YZb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-492" y="390"/>
         </scene>
     </scenes>
     <resources>
         <image name="home" width="24" height="24"/>
         <image name="profile" width="24" height="24"/>
+        <image name="storage" width="24" height="24"/>
     </resources>
 </document>

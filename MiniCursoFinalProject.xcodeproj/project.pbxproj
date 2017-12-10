@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4172D821FDDCF6F0049390C /* CoreData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4172D811FDDCF6F0049390C /* CoreData.storyboard */; };
+		E4172D851FDDD1920049390C /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4172D841FDDD1920049390C /* CoreDataViewController.swift */; };
 		E48067F31FB1159A004249E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48067F21FB1159A004249E2 /* AppDelegate.swift */; };
 		E48067F51FB1159A004249E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E48067F41FB1159A004249E2 /* ViewController.swift */; };
 		E48067F81FB1159A004249E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E48067F61FB1159A004249E2 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E4172D811FDDCF6F0049390C /* CoreData.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CoreData.storyboard; sourceTree = "<group>"; };
+		E4172D841FDDD1920049390C /* CoreDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		E48067EF1FB1159A004249E2 /* MiniCursoFinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniCursoFinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E48067F21FB1159A004249E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E48067F41FB1159A004249E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4172D831FDDD17B0049390C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E4172D841FDDD1920049390C /* CoreDataViewController.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		E48067E61FB1159A004249E2 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +181,7 @@
 			children = (
 				E48068211FB11602004249E2 /* Home.storyboard */,
 				E48068221FB11602004249E2 /* Profile.storyboard */,
+				E4172D811FDDCF6F0049390C /* CoreData.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -210,6 +223,7 @@
 		E480682D1FB11602004249E2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E4172D831FDDD17B0049390C /* CoreData */,
 				E480682E1FB11602004249E2 /* Home */,
 				E48068311FB11602004249E2 /* Profile */,
 			);
@@ -365,6 +379,7 @@
 				E48068361FB11602004249E2 /* Profile.storyboard in Resources */,
 				E48067F81FB1159A004249E2 /* Main.storyboard in Resources */,
 				E480683B1FB11602004249E2 /* HomeTableViewCell.xib in Resources */,
+				E4172D821FDDCF6F0049390C /* CoreData.storyboard in Resources */,
 				E48068351FB11602004249E2 /* Home.storyboard in Resources */,
 				E4D553CD1FB48CA900FD9AC3 /* CustomView.xib in Resources */,
 			);
@@ -394,6 +409,7 @@
 				E480683A1FB11602004249E2 /* HomeTableViewCell.swift in Sources */,
 				E48067F51FB1159A004249E2 /* ViewController.swift in Sources */,
 				E48068401FB11602004249E2 /* TabBarController.swift in Sources */,
+				E4172D851FDDD1920049390C /* CoreDataViewController.swift in Sources */,
 				E480683F1FB11602004249E2 /* ProfileViewController.swift in Sources */,
 				E48067F31FB1159A004249E2 /* AppDelegate.swift in Sources */,
 				E48068371FB11602004249E2 /* AnimalsFactory.swift in Sources */,
