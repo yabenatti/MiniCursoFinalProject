@@ -51,11 +51,11 @@ class CoreDataViewController: UIViewController {
             [unowned self] action in
             
             guard let textField = alert.textFields?.first,
-                let animalToSave = textField.text else {
+                let animalNameToSave = textField.text else {
                     return
             }
             
-            self.save(animal: animalToSave)
+            self.save(animalName: animalNameToSave)
             self.tableView.reloadData()
         }
         
@@ -69,8 +69,24 @@ class CoreDataViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    func save(animal: String) {
+    func save(animalName: String) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return
+        }
         
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let entity = NSEntityDescription.entity(forEntityName: "AnimalCoreData", in: managedContext)!
+        
+        let animalCoreData = NSManagedObject(entity: entity, insertInto: managedContext)
+        animalCoreData.setValue(animalName, forKeyPath: "name")
+        
+        do {
+            try managedContext.save()
+            self.animalsCoreData.append(animalCoreData)
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
     }
 }
 
